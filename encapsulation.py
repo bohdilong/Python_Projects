@@ -1,6 +1,5 @@
-
-# class to store methods to restrict other methods and variables from accedentlly altering the stored code
-class Protected:
+# class using private attribute
+class Private:
     # method containing a private variable
     def __init__(self):
         self.__privateVar = 12
@@ -11,7 +10,18 @@ class Protected:
     def setPrivate(self, private):
         self.__privateVar = private
 # calling class and its containing methods
-obj = Protected()
+obj = Private()
 obj.getPrivate()
 obj.setPrivate(23)
 obj.getPrivate()
+
+
+
+#class using protected attribute
+class Protected:
+    def __init__(self):
+        self._protectedVar = 0
+
+obj2 = Protected()
+obj2._protectedVar = 34
+print(obj2._protectedVar)
