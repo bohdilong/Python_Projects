@@ -1,5 +1,5 @@
-import tkinter
-from tkinter import *
+import tkinter as TTk
+from tkinter import *j
 
 
 class ParentWindow(Frame):
