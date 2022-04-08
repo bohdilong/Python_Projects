@@ -34,14 +34,14 @@ class ParentWindow(Frame):
         self.btnSelect1 = Button(self.master, text='select source', width=10, height=2, command=self.foldersearch1)
         self.btnSelect1.grid(row=1, column=1, padx=(0,0), pady=(30,0))
 
-        self.lbldestination = Label(self.master, text='file destination', font=('Helvetica', 16),fg='black', bg='lightgray')
-        self.lbldestination.grid(row=2, column=1, padx=(30,0), pady=(30,0))
+        self.lbldestination = Label(self.master, text='File destination:', font=('Helvetica', 16),fg='black', bg='lightgray')
+        self.lbldestination.grid(row=2, column=0, padx=(30,0), pady=(30,0))
 
         self.txtsource2 = Entry(self.master, text=self.varFileTransfer2, font=('Helvetica', 16), fg='black', bg='lightblue')
-        self.txtsource2.grid(row=3, column=1, padx=(30,0), pady=(30,0))
+        self.txtsource2.grid(row=2, column=1, padx=(30,0), pady=(30,0))
 
 
-        self.btnSelect2 = Button(self.master, text='select destination', width=10, height=2, command=self.foldersearch2)
+        self.btnSelect2 = Button(self.master, text='select destination', width=14, height=2, command=self.foldersearch2)
         self.btnSelect2.grid(row=4, column=1, padx=(30,0), pady=(30,0))
 
         self.btnSend = Button(self.master, text='send files', width=10, height=2, command=self.FileTransfer)
